@@ -1,0 +1,53 @@
+// sos.js
+function triggerSOS() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(sendAlert, showError);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+function sendAlert(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    const message = `SOS! I need help. My location is: https://maps.google.com/?q=${latitude},${longitude}`;
+
+    // You can either alert it or send it to an API
+    alert(message);
+
+    // Send location and alert message to a backend server or emergency contacts
+    // Example API call (to be replaced with actual server endpoint)
+    /*
+    fetch('https://your-backend-server.com/sos', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            latitude: latitude,
+            longitude: longitude,
+            message: message
+        })
+    }).then(response => {
+        alert('SOS Alert Sent Successfully');
+    }).catch(error => {
+        alert('Error sending SOS Alert');
+    });
+    */
+}
+
+function showError(error) {
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            alert("User denied the request for Geolocation.");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            alert("Location information is unavailable.");
+            break;
+        case error.TIMEOUT:
+            alert("The request to get user location timed out.");
+            break;
+        case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.");
+            break;
+    }
+}
