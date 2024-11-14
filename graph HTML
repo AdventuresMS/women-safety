@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Getting Started with Chart JS with www.chartjs3.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="graph.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .chartMenu {
+        
+        width: 80vw;
+        height: 40px;
+        background: #1A1A1A;
+        color: rgba(54, 162, 235, 1);
+      }
+      
+      .chartCard {
+        width: 80vw;
+        height: calc(100vh - 40px);
+        background: rgba(54, 162, 235, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .chartBox {
+        width: 700px;
+        height:350px;
+        padding: 20px;
+        border-radius: 20px;
+        border: solid 3px rgba(54, 162, 235, 1);
+        background: white;
+      }
+      @media only screen and (max-width:600px){
+        .chartBox{
+          width: 90%;
+        height:45%;  
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <div class = "hero">
+    <nav>
+      <img src= "img/log(1)(1).png" class="logo">
+    <ul>
+    <li> <a href= "#">Learn</a>
+    
+    <ul class="dropdown">
+    <li><a href= "video.html" class= "active">History</a></li>
+    <li><a href= "video.html" class= "active">Self-defence</a></li>
+    <li><a href= "video.html">Safety tips</a></li>
+    </ul>
+    
+    </li>
+    <li> <a href= "graph.html">Analytics</a></li>
+    <li> <a href= "shop.html">shop</a></li>
+    <li> <a href= "#">About Us</a></li>
+    </ul>
+    <div>
+    <a href="index.html" class="btnlogin-popup">Home</a>
+    
+    </div>
+    </nav>
+  
+    <div class="chartMenu">
+      <p><h2><center>STATISTICS</center></h2></p>
+    </div>
+    <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script>
+    // setup 
+    const data = {
+      labels: ['Workplace', 'Domestic', 'Publicplace', 'Online ', 'Human trafficking'],
+      datasets: [{
+        label: 'data in %age',
+        data: [50,30,80,20,60],
+        backgroundColor: [
+          'rgba(255, 26, 104, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          
+        ],
+        borderColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          
+        ],
+        borderWidth: 1
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        maintainAspectRatio: false,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    };
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+    // Instantly assign Chart.js version
+    const chartVersion = document.getElementById('chartVersion');
+    chartVersion.innerText = Chart.version;
+    </script>
+<div style="width: 60px; height:60px; position:fixed; right:50px; bottom:50px;">
+    <a href="https://wa.me/917859027207"><img src="img/wb2.png" style="width:100px; height:100px;"/></a>
+    </div>
+    <div class="chartMenu"><style>margin-top: 40px;</style>
+      <p><h2><center>RAPE- CASES</center></h2></p>
+    </div>
+  <div class="container">
+    <div class="donut-chart">
+      <div class="donut">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+          <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        </svg>
+        <div class="percentage"><30%</div>
+      </div>
+      <p>Registered Cases</p>
+    </div>
+
+    <div class="donut-chart">
+      <div class="donut">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+          <path class="circle" stroke-dasharray="85, 100" d="M18 2.0845a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        </svg>
+        <div class="percentage">>75%</div>
+      </div>
+      <p>Non- registered Caese</p>
+    </div>
+  </div>
+ </body>
+</html>
