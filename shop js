@@ -1,0 +1,93 @@
+let cart = [];
+let cartTotal = 0;
+let shippingAddress = '';
+
+function addToCart(productName, price) {
+    cart.push({ name: productName, price: price });
+    cartTotal += price;
+    document.getElementById('cart-count').textContent = cart.length;
+    alert(`${productName} added to cart.`);
+}
+
+function toggleCart() {
+    const cartSection = document.getElementById('cart');
+    if (cartSection.style.display === 'none' || cartSection.style.display === '') {
+        updateCartUI();
+        cartSection.style.display = 'block';
+    } else {
+        cartSection.style.display = 'none';
+    }
+}
+
+function updateCartUI() {
+    const cartItems = document.getElementById('cart-items');
+    const cartTotalElement = document.getElementById('cart-total');
+    cartItems.innerHTML = '';
+    
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price}`;
+        cartItems.appendChild(li);
+    });
+
+    cartTotalElement.textContent = cartTotal;
+}
+
+function goToAddressPage() {
+    if (cart.length === 0) {
+        alert('Your cart is empty.');
+        return;
+    }
+    document.getElementById('cart').style.display = 'none';
+    document.getElementById('address-section').style.display = 'block';
+}
+
+function submitAddress() {
+    const name = document.getElementById('name').value;
+    const address = document.getElementById('address').value;
+    const city = document.getElementById('city').value;
+    const zipcode = document.getElementById('zipcode').value;
+    const country = document.getElementById('country').value;
+
+    if (name && address && city && zipcode && country) {
+        shippingAddress = `${name}, ${address}, ${city}, ${zipcode}, ${country}`;
+        document.getElementById('address-section').style.display = 'none';
+        goToOrderSummary();
+    } else {
+        alert('Please fill in all address fields.');
+    }
+}
+
+function goToOrderSummary() {
+    document.getElementById('summary-address').textContent = shippingAddress;
+    document.getElementById('summary-total').textContent = cartTotal;
+    document.getElementById('order-section').style.display = 'block';
+}
+
+function placeOrder() {
+    alert('Order placed successfully!');
+    document.getElementById('order-section').style.display = 'none';
+    document.getElementById('confirmation-section').style.display = 'block';
+
+    // Clear cart and reset after order is placed
+    cart = [];
+    cartTotal = 0;
+    document.getElementById('cart-count').textContent = cart.length;
+}
+
+function showModal(imageUrls) {
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    
+    // Display the first image in the modal
+    modalImage.src = imageUrls[0];
+    modal.style.display = 'block';
+
+    // Optionally, you can add functionality to cycle through images if needed
+    // For simplicity, we are only displaying the first image here
+}
+
+function closeModal() {
+    const modal = document.getElementById('image-modal');
+    modal.style.display = 'none';
+}
