@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Defence</title>
+    
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class = "hero">
+    <nav>
+      <img src= "img/log(1)(1).png" class="logo">
+    <ul>
+    <li> <a href= "#">Learn</a>
+    
+    <ul class="dropdown">
+    <li><a href= "#history" class= "active">History</a></li>
+    <li><a href= "video.html" class= "active">Self-defence</a></li>
+    <li><a href= "#Vedio">Safety tips</a></li>
+    </ul>
+    
+    </li>
+    <li> <a href= "graph.html">Analytics</a></li>
+    <li> <a href= "shop.html">shop</a></li>
+    <li> <a href= "#">About Us</a></li>
+    </ul>
+    <div>
+    <a href="index.html" class="btnlogin-popup">Home</a>
+    
+    </div>
+    </nav>
+  <h3 class="heading">HISTORY </h3>
+<div class="container swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/p1.png" alt="card Image" class="card-image">
+                    <p class="badge">MeToo Movement in India (2018):
+</p>
+                    <h2 class="card-title">Prominent Accusations: Several high-profile figures, including Bollywood actors, directors, journalists, and government officials, were accused of sexual harassment.</h2>
+                    <a  href=https://en.wikipedia.org/wiki/MeToo_movement_in_India>
+                        read more</a>
+                    
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/p2.jpg" alt="card Image" class="card-image">
+                    <p class="badge">Delhi University Professor Case (2022)
+</p>
+                    <h2 class="card-title">A professor from Delhi University faced multiple accusations of sexual harassment from students, leading to protests demanding stricter actions against him, highlighting harassment.</h2>
+                    <a  href=https://www.indiatoday.in/law/story/bombay-high-court-acquits-ex-delhi-university-professor-saibaba-5-others-in-maoist-link-case-2510687-2024-03-05>
+                        read more</a>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+               <a href="#" class="card-link">
+                    <img src="img/p3.webp" alt="card Image" class="card-image">
+                    <p class="badge">R.G. Kar College Kolkata(2024)</p>
+                    <h2 class="card-title">The body of the on-duty trainee doctor was found in the seminar room of the State-run hospital on August 9, triggering nationwide outrage.The CBI is investigating the case.</h2>
+                    <a href="https://www.thehindu.com/news/national/west-bengal/rg-kar-hospital-rape-murder-case-calcutta-high-court-seeks-cbi-report-on-nasty-social-media-posts-on-victim/article68608680.ece">read more</a>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/p4.jpg" alt="card Image" class="card-image">
+                    <p class="badge">Brij Bhushan Sharan Singh (2022)</p>
+                    <h2 class="card-title">
+Wrestling Federation of India (WFI) Chief Brij Bhushan Sharan Singh was accused by women wrestlers of sexual harassment, which led to an inquiry within the sports community.</h2>
+                    <a href="https://en.wikipedia.org/wiki/Brij_Bhushan_Sharan_Singh">read more</a>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/p5.jpg" alt="card Image" class="card-image">
+                    <p class="badge">Man rapes woman in Ujjain(2024)</p>
+                    <h2 class="card-title">A woman scrap collector was raped allegedly by a man after he forced her to consume liquor in Agar Naka area of Madhya Pradesh's Ujjain, a police official said on Thursday. </h2>
+                <a href="https://www.thehindu.com/news/national/madhya-pradesh/rape-case-in-ujjain/article68613318.ece">read more</a>
+                </a>
+            </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    <h3 class="heading">SELF-DEFENCE </h3>
+    <div class="container">
+    <div class="main-video">
+    <div class ="video">
+    <video src="img/t1.mp4" controls muted autoplay></video>
+    <h3 class="title">01. video</h3>
+    </div>
+    </div>
+    <div class="video-list">
+    <div class="vid active">
+    <video src="img/t1.mp4" muted></video>
+    <h3 class="title">01. video</h3>
+    </div>
+    <div class="vid">
+    <video src="img/t2.mp4" muted></video>
+    <h3 class="title">02. video</h3>
+    </div>
+    <div class="vid">
+    <video src="img/t3.mp4" muted></video>
+    <h3 class="title">03. video</h3>
+    </div>
+    <div class="vid">
+    <video src="img/t4.mp4" muted></video>
+    <h3 class="title">04. video</h3>
+    </div>
+    <div class="vid">
+    <video src="img/t5.mp4" muted></video>
+    <h3 class="title">05. video</h3>
+    </div>
+    </div>
+    </div>
+<script>
+let listVideo= document.querySelectorAll('.video-list .vid');
+let mainVideo= document.querySelector('.main-video video');
+let title= document.querySelector('.video-list .title');
+
+listVideo.forEach(video =>{
+    video.onclick = () =>{
+        listVideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')){
+            let src = video.children[0].getAttribute('src');
+            mainVideo.src= src;
+            let text=video.children[1].innerHTML;
+            title.innerHTML= text;
+        };
+    };
+});
+</script>
+<h3 class="heading">SAFETY-TIPS </h3>
+<div class="container swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/b1.jpg" alt="card Image" class="card-image">
+                    <p class="badge">PUBLIC PLACE</p>
+                    <h2 class="card-title">
+                    <ol>
+                     <li>Be aware of your surroundings</li>
+                     <li>Stay in well-lit and crowded areas</li>
+                     <li>Keep valuables secure</li>
+                     <li>Avoid distractions</li>
+                     <li>Trust your instincts</li>
+                    
+                     <li>Keep emergency numbers handy</li>
+                     
+
+                    </ol>
+                    </h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                        </button>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/B2.jpeg" alt="card Image" class="card-image">
+                    <p class="badge">WORKPLACE</p>
+                    <h2 class="card-title"><ol><li>Know Emergency Protocols</li>
+                    <li>Be Aware of Your Surroundings</li> 
+                    <li>Trust Your Instincts</li>
+                    <li>Maintain Personal Boundaries</li> 
+                    <li>Avoid Staying Late Alone</li></ol></h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                        </button>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/B3.jpeg" alt="card Image" class="card-image">
+                    <p class="badge">DOMESTIC VOILENCE</p>
+                    <h2 class="card-title">
+                    <ol>
+                      <li>Create a safety plan</li> 
+                      <li>Know emergency contacts</li>
+                      <li>Document abuse</li>
+                      <li>Plan your exit</li>
+                      
+                      <li>Use technology wisely</li>
+                      <li>Protect children</li>
+                      <li>Explore legal options</li> 
+                      
+                    </ol>
+                      </h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                        </button>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/B4.webp" alt="card Image" class="card-image">
+                    <p class="badge">CYBER- HARRASMENT</p>
+                    <h2 class="card-title">
+                    <ol>
+                    <li>Avoid suspicious links or attachments.</li>
+                    <li>Limit personal info on social media.</li>
+                     <li>Don’t overshare private details.</li>
+                     <li>Keep devices updated and secure.</li>
+                     <li>Avoid public Wi-Fi for sensitive accounts.</li>
+                     </ol>
+                     </h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                        </button>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="img/B5.jpeg" alt="card Image" class="card-image">
+                    <p class="badge">HUMAN-TRAFFICKING</p>
+                    <h2 class="card-title">
+                    <ol>
+                    <li> Verify identities and legitimacy.</li>
+<li>Don't accept rides from strangers.</li>
+<li>Keep personal info and photos private.</li>
+<li>Be wary of easy money promises.</li>
+<li>Research signs of human trafficking.</li>
+<li>Keep social media profiles private.</li>
+</h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                        </button>
+                </a>
+            </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    
+    
+<footer>
+        <p>&copy; 2024 YourCompany. All rights reserved.</p>
+        <a href="#">About Us</a> | 
+        <a href="#">Contact Us</a> | 
+        <a href="#">Get Help</a> |
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+    </footer>
+    <div style="width: 60px; height:60px; position:fixed; right:50px; bottom:50px;">
+    <a href="https://wa.me/917859027207"><img src="img/wb2.png" style="width:100px; height:100px;"/></a>
+    </div>
+  </body>
+
+</html>
