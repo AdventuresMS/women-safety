@@ -1,0 +1,25 @@
+.sos-container {
+    position: relative;
+    
+    justify-content: center;
+    align-items: center;
+    height: 0;
+
+    background-color: #035f60;
+}
+
+.sos-button {
+    margin-top: 70px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sos-button:hover {
+    background-color: #661a1a;
+}
